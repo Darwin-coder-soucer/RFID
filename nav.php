@@ -37,19 +37,19 @@ También tengo canal de YouTube: https://www.youtube.com/channel/UCroP4BTWjfM0Ck
     <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="employees.php">Employees <i class="fa fa-users"></i></a>
+                <a class="nav-link" href="employees.php">Productos <i class="fa fa-users"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="employees_rfid.php">RFID employees cards&nbsp;<i class="fa fa-id-card"></i></a>
+                <a class="nav-link" href="employees_rfid.php">Tarjetas RFID para Producto&nbsp;<i class="fa fa-id-card"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="attendance_register.php">Register attendance <i class="fa fa-check-double"></i></a>
+                <a class="nav-link" href="attendance_register.php">Registrar Inventario <i class="fa fa-check-double"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="attendance_report.php">Attendance report <i class="fa fa-file-alt"></i></a>
+                <a class="nav-link" href="attendance_report.php">Informe de Inventario <i class="fa fa-file-alt"></i></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="//parzibyte.me/blog">Support & help&nbsp;<i class="fa fa-hands-helping"></i></a>
+                <a class="nav-link" href="//parzibyte.me/blog">Soporte y ayuda&nbsp;<i class="fa fa-hands-helping"></i></a>
             </li>
         </ul>
     </div>

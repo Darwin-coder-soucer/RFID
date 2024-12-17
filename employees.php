@@ -34,10 +34,10 @@ $employees = getEmployees();
 ?>
 <div class="row">
     <div class="col-12">
-        <h1 class="text-center">Employees</h1>
+        <h1 class="text-center">Productos</h1>
     </div>
     <div class="col-12">
-        <a href="employee_add.php" class="btn btn-info mb-2">Add new employee <i class="fa fa-plus"></i></a>
+        <a href="employee_add.php" class="btn btn-info mb-2">Agregar nuevo Producto <i class="fa fa-plus"></i></a>
     </div>
     <div class="col-12">
         <div class="table-responsive">
@@ -45,9 +45,9 @@ $employees = getEmployees();
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>Nombre</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>

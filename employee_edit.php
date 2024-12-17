@@ -36,13 +36,13 @@ $employee = getEmployeeById($id);
 ?>
 <div class="row">
     <div class="col-12">
-        <h1 class="text-center">Edit employee</h1>
+        <h1 class="text-center">Editar Producto</h1>
     </div>
     <div class="col-12">
         <form action="employee_update.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $employee->id ?>">
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Nombre</label>
                 <input value="<?php echo $employee->name ?>" name="name" placeholder="Name" type="text" id="name" class="form-control" required>
             </div>
             <div class="form-group">

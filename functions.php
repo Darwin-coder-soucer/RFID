@@ -227,22 +227,26 @@ function getEmployees()
 
 function getVarFromEnvironmentVariables($key)
 {
-    if (defined("_ENV_CACHE")) {
-        $vars = _ENV_CACHE;
-    } else {
-        $file = "env.php";
-        if (!file_exists($file)) {
-            throw new Exception("The environment file ($file) does not exists. Please create it");
-        }
-        $vars = parse_ini_file($file);
-        define("_ENV_CACHE", $vars);
+    // Incluye el archivo de configuración si no se ha incluido aún
+    if (!defined("MYSQL_DATABASE_NAME")) {
+        require_once "env.php";
     }
-    if (isset($vars[$key])) {
-        return $vars[$key];
-    } else {
-        throw new Exception("The specified key (" . $key . ") does not exist in the environment file");
+
+    // Busca la constante según la clave solicitada
+    switch ($key) {
+        case 'MYSQL_PASSWORD':
+            return MYSQL_PASSWORD;
+        case 'MYSQL_USER':
+            return MYSQL_USER;
+        case 'MYSQL_DATABASE_NAME':
+            return MYSQL_DATABASE_NAME;
+        case 'MYSQL_HOST':
+            return MYSQL_HOST;
+        default:
+            throw new Exception("The specified key (" . $key . ") does not exist in the environment file");
     }
 }
+
 
 function getDatabase()
 {

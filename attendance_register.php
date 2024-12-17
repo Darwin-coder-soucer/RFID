@@ -32,13 +32,13 @@ include_once "nav.php";
 ?>
 <div class="row" id="app">
     <div class="col-12">
-        <h1 class="text-center">Attendance</h1>
+        <h1 class="text-center">inventario</h1>
     </div>
     <div class="col-12">
         <div class="form-inline mb-2">
             <label for="date">Date: &nbsp;</label>
             <input @change="refreshEmployeesList" v-model="date" name="date" id="date" type="date" class="form-control">
-            <button @click="save" class="btn btn-success ml-2">Save</button>
+            <button @click="save" class="btn btn-success ml-2">Ahorrar</button>
         </div>
     </div>
     <div class="col-12">
@@ -47,10 +47,10 @@ include_once "nav.php";
                 <thead>
                     <tr>
                         <th>
-                            Employee
+                            Producto
                         </th>
                         <th>
-                            Status
+                        Estado
                         </th>
                     </tr>
                 </thead>
@@ -60,8 +60,8 @@ include_once "nav.php";
                         <td>
                             <select v-model="employee.status" class="form-control">
                                 <option disabled value="unset">--Select--</option>
-                                <option value="presence">Presence</option>
-                                <option value="absence">Absence</option>
+                                <option value="presence">Presencia</option>
+                                <option value="absence">Ausencia</option>
                             </select>
                         </td>
                     </tr>

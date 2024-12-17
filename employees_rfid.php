@@ -32,7 +32,7 @@ include_once "nav.php";
 ?>
 <div class="row" id="app">
     <div class="col-12">
-        <h1 class="text-center">RFID Pairing</h1>
+        <h1 class="text-center">Emparejamiento RFID</h1>
     </div>
     <div class="col-12">
         <div class="table-responsive">
@@ -40,13 +40,13 @@ include_once "nav.php";
                 <thead>
                     <tr>
                         <th>
-                            Employee
+                            Producto
                         </th>
                         <th>
-                            RFID serial
+                        Serie RFID
                         </th>
                         <th>
-                            Actions
+                        Comportamiento
                         </th>
                     </tr>
                 </thead>
@@ -57,12 +57,12 @@ include_once "nav.php";
 
                             <h4 v-if="employee.rfid_serial"><span class="badge badge-success"><i class="fa fa-check"></i>&nbsp;Assigned ({{employee.rfid_serial}})</span></h4>
                             <h4 v-else-if="employee.waiting"><span class="badge badge-warning"><i class="fa fa-clock"></i>&nbsp;Waiting... Please read a RFID card</span></h4>
-                            <h4 v-else><span class="badge badge-primary"><i class="fa fa-times"></i>&nbsp;Not assigned</span></h4>
+                            <h4 v-else><span class="badge badge-primary"><i class="fa fa-times"></i>&nbsp;No asignado</span></h4>
                         </td>
                         <td>
                             <button @click="removeRfidCard(employee.rfid_serial)" v-if="employee.rfid_serial" class="btn btn-danger">Remove</button>
-                            <button v-else-if="employee.waiting" @click="cancelWaitingForPairing" class="btn btn-warning">Cancel</button>
-                            <button @click="assignRfidCard(employee)" v-else class="btn btn-info">Assign</button>
+                            <button v-else-if="employee.waiting" @click="cancelWaitingForPairing" class="btn btn-warning">Cancelar</button>
+                            <button @click="assignRfidCard(employee)" v-else class="btn btn-info">Asignar</button>
                         </td>
                     </tr>
                 </tbody>

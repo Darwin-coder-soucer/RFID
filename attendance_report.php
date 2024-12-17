@@ -42,7 +42,7 @@ $employees = getEmployeesWithAttendanceCount($start, $end);
 ?>
 <div class="row">
     <div class="col-12">
-        <h1 class="text-center">Attendance report</h1>
+        <h1 class="text-center">Informe de Producto</h1>
     </div>
     <div class="col-12">
 
@@ -51,18 +51,18 @@ $employees = getEmployeesWithAttendanceCount($start, $end);
             <input required id="start" type="date" name="start" value="<?php echo $start ?>" class="form-control mr-2">
             <label for="end">End:&nbsp;</label>
             <input required id="end" type="date" name="end" value="<?php echo $end ?>" class="form-control">
-            <button class="btn btn-success ml-2">Filter</button>
+            <button class="btn btn-success ml-2">Filtrar</button>
         </form>
-        <a href="./download_employee_report.php?start=<?php echo $start ?>&end=<?php echo $end ?>" class="btn btn-info mb-2">Download Excel Report</a>
+        <a href="./download_employee_report.php?start=<?php echo $start ?>&end=<?php echo $end ?>" class="btn btn-info mb-2">Descargar informe de Excel</a>
     </div>
     <div class="col-12">
         <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Employee</th>
-                        <th>Presence count</th>
-                        <th>Absence count</th>
+                        <th>Producto</th>
+                        <th>recuento de presencia</th>
+                        <th>recuento de ausencias</th>
                     </tr>
                 </thead>
                 <tbody>
